@@ -32,8 +32,12 @@ export const Home: React.FC = () => {
       <Card className="max-w-2xl w-full text-center p-8 shadow-2xl rounded-2xl border">
         <h1 className="text-black dark:text-white font-bold text-6xl">
           TheIbisHead
+          <sup className="align-top text-xs leading-10">&trade;</sup>
         </h1>
-        <p className="text-sm">Crafting clean, performant software solutions</p>
+        <p className="text-sm mb-6">
+          Connecting systems, upgrading the past, and engineering AI-powered
+          software.
+        </p>
 
         <AnimatePresence mode="wait">
           <motion.blockquote
@@ -48,7 +52,9 @@ export const Home: React.FC = () => {
           </motion.blockquote>
         </AnimatePresence>
 
-        <p className="text-sm">&copy; 2025 — info@theibishead.com</p>
+        <p className="text-sm">
+          &copy; 2025 — <strong>info@theibishead.com</strong>
+        </p>
       </Card>
     </div>
   );
